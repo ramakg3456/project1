@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME TO DJANGO</h1>
+    <ul class="list-group">
+        {% for post in AllPost %}
+        <li class="list-items">
+            Name : {{post.Name}}
+        </li>
+        <li class="list-items">
+            Blood_group : {{post.Blood_group}}
+        </li>
+        <li class="list-items">
+            Age : {{post.Age}}
+        </li>
+        <li class="list-items">
+            Disease : {{post.Disease}}
+        </li>
+        <li class="list-items">
+            Location : {{post.Location}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
